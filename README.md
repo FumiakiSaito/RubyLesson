@@ -1,4 +1,4 @@
-# RubyLesson
+# Ruby
 
 ### 実行方法
 ```
