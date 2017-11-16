@@ -1,11 +1,11 @@
 # RubyLesson
 
-###実行方法
+### 実行方法
 ```
 $ ruby [ファイル名]
 ```
 
-###コメント
+### コメント
 ```
 # 1行コメント
 
@@ -15,17 +15,17 @@ $ ruby [ファイル名]
 =end
 ```
 
-###変数定義
+### 変数定義
 ```
 msg = "hello world"
 ```
 
-###定数定義(全て大文字で定義する)
+### 定数定義(全て大文字で定義する)
 ```
 ADMIN_EMAIL = "hoge@gmail.com"
 ```
 
-###データ
+### データ
 * 全てオブジェクトである
 
 文字列はStringオブジェクトなのでメソッドが使える  
@@ -45,7 +45,7 @@ p y.round
 ```
 
 ## 文字列オブジェクト
-####ダブルクォートとシングルクォートの違い
+#### ダブルクォートとシングルクォートの違い
 ```
 name = "fumi"
 x = "hello world, #{name}" # 変数が展開される。hello world, fumi
@@ -54,19 +54,19 @@ puts x
 puts y
 ```
 
-####文字列連結
+#### 文字列連結
 
 ```
 puts "hello world" + " fumi" # hello world fumi
 ```
 
-####文字列繰り返し
+#### 文字列繰り返し
 
 ```
 puts "hello " * 5 # hello hello hello hello hello
 ```
 
-##メソッド
+## メソッド
 リファレンスを読むとメソッド名の後に!や?が付いているものがある  
 
 * ! 破壊的メソッド
@@ -88,7 +88,7 @@ s = ""
 p s.empty? # true
 ```
 
-##配列オブジェクト
+## 配列オブジェクト
 ```
 sales = [5, 8, 4]
 p sales[1]
@@ -134,7 +134,7 @@ p sales.size
 p sales.push(100)
 ```
 
-##ハッシュオブジェクト
+## ハッシュオブジェクト
 
 ```
 sales = {"fumi" => 200, "taro" => 300}
@@ -150,7 +150,7 @@ p sales.values          # [200, 300]
 p sales.has_key?(:fumi) # true
 ```
 
-##オブジェクトの変換
+## オブジェクトの変換
 ```
 a = 10
 b = "5"
@@ -228,7 +228,7 @@ else
 end
 ```
 
-##繰り返し処理
+## 繰り返し処理
 
 times
 
@@ -279,7 +279,7 @@ end
 end
 ```
 
-##関数的メソッド
+## 関数的メソッド
 
 ```
 def sayHi(name)
@@ -333,7 +333,7 @@ tom.sayHi()
 User.sayHello() # hello from User class 1
 ```
 
-##クラスの継承
+## クラスの継承
 
 ```
 # Userクラス
@@ -366,7 +366,7 @@ bob.shout() # HELLO! from Bob
 tom.shout() # エラー
 ```
 
-##アクセサ
+## アクセサ
 
 ```
 class User
@@ -406,7 +406,7 @@ bob.name = 'Tom'
 bob.sayHi()
 ```
 
-##組み込みクラス例(TIME)
+## 組み込みクラス例(TIME)
 
 ```
 t = Time.now
